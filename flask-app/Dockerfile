@@ -1,9 +1,12 @@
+version: '3.9'
 
-FROM python:3.11-slim
-WORKDIR /app
-COPY app.py .
-COPY templates/ templates/
-RUN apt-get update && apt-get install -y docker.io
-RUN pip install flask
-VOLUME ["/var/run/docker.sock:/var/run/docker.sock"]
-CMD ["python", "app.py"]
+services:
+  flask-app:
+    image: flask-app1
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    # Define el volumen aquí para la conexión a Docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
