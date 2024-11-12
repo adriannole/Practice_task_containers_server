@@ -1,1 +1,1 @@
-console.log("Hola Mundo desde JavaScript");
+console.log("Hola Mundo desde JavaScript, basado en metodos ");

@@ -16,11 +16,11 @@ def run_docker(container_name):
 @app.route('/')
 def home():
     results = {
-        "Python": run_docker("hola-mundo-python"),
-        "JavaScript": run_docker("hola-mundo-javascript"),
-        "Java": run_docker("hola-mundo-java"),
-        "Ruby": run_docker("hola-mundo-ruby"),
-        "Go": run_docker("hola-mundo-go")
+        "Lenguaje en Python": run_docker("hola-mundo-python"),
+        "Lenguaje en JavaScript": run_docker("hola-mundo-javascript"),
+        "Lenguaje en Java": run_docker("hola-mundo-java"),
+        "Lenguaje en Ruby": run_docker("hola-mundo-ruby"),
+        "Lenguaje en Go": run_docker("hola-mundo-go")
     }
     return render_template('index.html', results=results)
 
