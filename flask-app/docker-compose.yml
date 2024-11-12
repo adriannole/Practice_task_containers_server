@@ -7,5 +7,6 @@ services:
       context: .
     ports:
       - "5000:5000"
+    # Define el volumen aquí para la conexión a Docker
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
