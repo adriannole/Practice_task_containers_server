@@ -63,7 +63,6 @@ To run this project on Docker, make sure you have Docker installed. If not, you 
 
 ## 🔨 **Usage Instructions**
 
-### 1. **Clone the Repository:**
 
 # Instrucciones para Ejecutar el Proyecto Docker
 
@@ -93,7 +92,7 @@ docker pull adrixer/trabajo_tarea:flask
 To get started, clone the project repository to your local machine using Git:
 
 ## Alternativa: Descargar Todas las Imágenes de una Sola Vez
-```bash
+
 git clone https://github.com/adriannole/Practice_task_containers_server.git
 
 docker pull adrixer/trabajo_tarea
@@ -123,3 +122,4 @@ def home():
         "Lenguaje en Go": run_docker("adrixer/trabajo_tarea:go")
      }
     return render_template('index.html', results=results)
+
