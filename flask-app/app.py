@@ -16,11 +16,11 @@ def run_docker(container_name):
 @app.route('/')
 def home():
     results = {
-        "Lenguaje en Python": run_docker("hola-mundo-python"),
-        "Lenguaje en JavaScript": run_docker("hola-mundo-javascript"),
-        "Lenguaje en Java": run_docker("hola-mundo-java"),
-        "Lenguaje en Ruby": run_docker("hola-mundo-ruby"),
-        "Lenguaje en Go": run_docker("hola-mundo-go")
+        "Lenguaje en Python": run_docker("adrixer/trabajo_tarea:python"),
+        "Lenguaje en JavaScript": run_docker("adrixer/trabajo_tarea:javascript"),
+        "Lenguaje en Java": run_docker("adrixer/trabajo_tarea:java"),
+        "Lenguaje en Ruby": run_docker("adrixer/trabajo_tarea:ruby"),
+        "Lenguaje en Go": run_docker("adrixer/trabajo_tarea:go")
     }
     return render_template('index.html', results=results)
 
