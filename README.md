@@ -82,44 +82,31 @@ Aquí podrás ver todos los tags disponibles para cada lenguaje de programación
 Es necesario descargar cada tag para que los contenedores funcionen correctamente. Abre Docker Desktop y usa la terminal para ejecutar los siguientes comandos en el orden indicado:
 
 
-docker pull adrixer/trabajo_tarea:javascript
-docker pull adrixer/trabajo_tarea:python
-docker pull adrixer/trabajo_tarea:ruby
-docker pull adrixer/trabajo_tarea:java
-docker pull adrixer/trabajo_tarea:go
-docker pull adrixer/trabajo_tarea:flask
+docker pull adrixer/trabajo_tarea:javascript.
+docker pull adrixer/trabajo_tarea:python.
+docker pull adrixer/trabajo_tarea:ruby.
+docker pull adrixer/trabajo_tarea:java.
+docker pull adrixer/trabajo_tarea:go.
+docker pull adrixer/trabajo_tarea:flask.
 
 To get started, clone the project repository to your local machine using Git:
 
 ## Alternativa: Descargar Todas las Imágenes de una Sola Vez
 
-git clone https://github.com/adriannole/Practice_task_containers_server.git
 
 docker pull adrixer/trabajo_tarea
-### 2. **Build the Docker Image:**
+
 
 ## Paso 3: Ejecutar el Contenedor Flask
+
+Ejecutamos el contenedor con el nombre **adrixer/trabajo_tarea:flask** 
+o a su vez ejecutamos en terminal el siguiente codigo: 
 docker run -p 5000:5000 adrixer/trabajo_tarea:flask
-docker build -t trabajo_tarea .
+
 
 ## Paso 4: Acceder a la Aplicación 
 
+Accedemos a la ruta:
 http://127.0.0.1:5000/ 
-### 3. **Run the Container:**
-docker run -d -p 5000:5000 trabajo_tarea
 
-
-## Lógica del Código 
-### 4. **Verify the Container is Running:**
-http://localhost:5000
-
-def home():
-    results = {
-        "Lenguaje en Python": run_docker("adrixer/trabajo_tarea:python"),
-        "Lenguaje en JavaScript": run_docker("adrixer/trabajo_tarea:javascript"),
-        "Lenguaje en Java": run_docker("adrixer/trabajo_tarea:java"),
-        "Lenguaje en Ruby": run_docker("adrixer/trabajo_tarea:ruby"),
-        "Lenguaje en Go": run_docker("adrixer/trabajo_tarea:go")
-     }
-    return render_template('index.html', results=results)
 
