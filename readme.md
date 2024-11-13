@@ -93,7 +93,7 @@ docker pull adrixer/trabajo_tarea:flask
 To get started, clone the project repository to your local machine using Git:
 
 ## Alternativa: Descargar Todas las Imágenes de una Sola Vez
-
+```bash
 git clone https://github.com/adriannole/Practice_task_containers_server.git
 
 docker pull adrixer/trabajo_tarea
